@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import TopCards from '../components/TopCards';
 import BarChart from '../components/BarChart';
 import RecentOrders from '../components/RecentOrders';
+import Sidebar from '../components/Sidebar';
 
 export default function Home() {
   return (
@@ -16,7 +17,12 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <main className='bg-gray-100 min-h-screen'>
-        <Header />
+        <Sidebar> 
+          
+          <Header />
+
+        </Sidebar>
+       
        
       </main>
     </>

@@ -10,7 +10,7 @@ const Sidebar = ({children}) => {
       <div
         className={` ${
           open ? "w-60 " : "w-20 "
-        } bg-dark-purple h-screen p-3  pt-6 relative duration-300`}
+        } bg-dark-purple h-screen p-3  pt-6 relative duration-300 bg-white`}
       >
         <MdKeyboardArrowLeft size={20} className={`absolute cursor-pointer -right-3 top-9 w-7 border-black
            border-2 rounded-full  ${!open && "rotate-180"}`}
@@ -35,7 +35,7 @@ const Sidebar = ({children}) => {
         </div>
         
        
-        <Link href='/'>
+          <Link href='/'>
             <div className='flex  hover:bg-gray-100 cursor-pointer my-4 p-3 rounded-lg inline-block'>
               <MdOutlineChromeReaderMode size={20} />
               <p className={`${!open && "hidden"} origin-left duration-200 px-2`}>

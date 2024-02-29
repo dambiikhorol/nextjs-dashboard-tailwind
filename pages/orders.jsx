@@ -3,10 +3,12 @@ import { FaShoppingBag } from 'react-icons/fa';
 import { BsThreeDotsVertical } from 'react-icons/bs';
 import { data } from '../data/data.js';
 import Header from '@/components/Header.jsx';
+import Sidebar from '@/components/Sidebar.jsx';
 
 const orders = () => {
   return (
     <div className='bg-gray-100 min-h-screen'>
+      <Sidebar> 
       <Header />
       <div className='p-4'>
         <div className='w-full m-auto p-4 border rounded-lg bg-white overflow-y-auto'>
@@ -56,6 +58,7 @@ const orders = () => {
           </ul>
         </div>
       </div>
+      </Sidebar> 
     </div>
   );
 };
